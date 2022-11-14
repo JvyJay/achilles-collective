@@ -1,0 +1,11 @@
+/* VARIABLES */
+/* CONTACT PAGE */
+.contact-section {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 140px;
+}
+
+/*# sourceMappingURL=contact.css.map */

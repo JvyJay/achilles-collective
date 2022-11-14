@@ -1,7 +1,6 @@
 // COMPONENTS
 import Form from './Form';
-import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
+import { Fade, Slide, Roll } from 'react-awesome-reveal';
 // PHOTOS
 import achilles_photo from '../img/HeroImageLogo.png';
 import pugilism_photo from '../img/pugilism.png';
@@ -15,8 +14,8 @@ const Home = () => {
       <main>
         {/* HERO AREA */}
         <div className='hero-area-container'>
-          <Fade left>
-            <div className='left'>
+          <div className='left'>
+            <Fade direction='left'>
               <h1>
                 Martial Arts <span>Community</span> Made & Created By{' '}
                 <span>Martial Artists</span>
@@ -43,20 +42,20 @@ const Home = () => {
                   <button className='secondary'>Contact us</button>
                 </a>
               </div>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className='right'>
+            </Fade>
+          </div>
+          <div className='right'>
+            <Fade direction='right'>
               <img
                 alt='Minimalist Achilles Collective Logo'
                 src={achilles_photo}
               ></img>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
         </div>
         {/* IMAGE INTERMISSION */}
-        <Fade top>
-          <section>
+        <section>
+          <Fade>
             <div className='image-intermission'>
               <img alt='Old School Pugilism' src={pugilism_photo}></img>
               <div className='text-block'>
@@ -68,8 +67,8 @@ const Home = () => {
                 </h4>
               </div>
             </div>
-          </section>
-        </Fade>
+          </Fade>
+        </section>
         {/* CONTACT SECTION */}
         <section>
           <div className='contact-form-section'>

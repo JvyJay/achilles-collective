@@ -1,6 +1,6 @@
 // Components
 import Card from './Card';
-import Fade from 'react-reveal/Fade';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 // IMAGES
 import pugilism_photo from '../img/pugilism2.png';
@@ -31,7 +31,7 @@ const About = () => {
     <div>
       <main>
         {/* IMAGE INTERMISSION */}
-        <Fade bottom>
+        <Fade>
           <div className='image-intermission'>
             <img alt='Old School Pugilism' src={pugilism_photo}></img>
             <div className='text-block'>
@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </Fade>
         {/* CARD SECTION */}
-        <Fade left>
+        <Slide left>
           <section className='card-section'>
             <h2>What You Can Expect</h2>
             <div className='card-container'>
@@ -64,7 +64,7 @@ const About = () => {
               })}
             </div>
           </section>
-        </Fade>
+        </Slide>
       </main>
     </div>
   );
