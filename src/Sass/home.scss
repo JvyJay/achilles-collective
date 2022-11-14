@@ -1,0 +1,164 @@
+@import 'variables';
+@import 'mixins';
+
+/* HOME PAGE */
+.hero-area-container {
+  @include flex-positioning(flex, row, space-evenly, center);
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .left {
+    width: 40%;
+    h1 {
+      margin-bottom: 20px;
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      @include flex-positioning(flex, row, flex-start, center);
+      button {
+        margin-right: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @media (max-width: $third-breakpoint) {
+        @include flex-positioning(flex, row, center, center);
+      }
+    }
+
+    @media (max-width: $third-breakpoint) {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: $third-breakpoint) {
+    @include flex-positioning(flex, column, center, center);
+    text-align: center;
+
+    img {
+      margin-top: 50px;
+
+      @media (max-width: 300px) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.image-intermission {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  img {
+    display: block;
+
+    @media (max-width: 550px) {
+      height: 200px;
+    }
+
+    @media (max-width: 430px) {
+      height: 220px;
+    }
+
+    @media (max-width: 340px) {
+      height: 240px;
+    }
+
+    @media (max-width: 330px) {
+      height: 300px;
+    }
+
+    @media (max-width: 210px) {
+      height: 350px;
+    }
+  }
+
+  .text-block {
+    @include text-block();
+
+    @media (max-width: 900px) {
+      width: 80%;
+    }
+
+    @media (max-width: 830px) {
+      width: 85%;
+    }
+
+    @media (max-width: 550px) {
+      width: 90%;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+
+    @media (max-width: 240px) {
+      p {
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.contact-form-section {
+  @include flex-positioning(flex, row, space-evenly, center);
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  .left {
+    @include flex-positioning(flex, column, center, flex-start);
+    .quart {
+      margin-bottom: 20px;
+      h3 {
+        font-weight: bold;
+      }
+      img {
+        width: 14px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+
+      button {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @media (max-width: $third-breakpoint) {
+        margin-right: 20px;
+      }
+
+      @media (max-width: 560px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: $third-breakpoint) {
+      @include flex-positioning(flex, row, center, center);
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      @include flex-positioning(flex, column, center, center);
+    }
+  }
+
+  @media (max-width: $third-breakpoint) {
+    @include flex-positioning(flex, column, center, center);
+  }
+}

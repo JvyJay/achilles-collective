@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+
+/* CONTACT PAGE */
+.contact-section {
+  @include flex-positioning(flex, center, center, center);
+  padding-top: 140px;
+}

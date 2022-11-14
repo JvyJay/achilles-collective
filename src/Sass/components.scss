@@ -1,0 +1,190 @@
+@import 'mixins';
+@import 'variables';
+
+/* FOOTER */
+.App {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 250px;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 25px !important;
+  @include flex-positioning(flex, row, space-between, center);
+
+  @media (max-width: $footer-breakpoint) {
+    @include flex-positioning(flex, column, center, center);
+  }
+
+  .leftSide {
+    p {
+      color: white !important;
+    }
+
+    img {
+      width: 25%;
+
+      @media (max-width: 550px) {
+        width: 50%;
+      }
+
+      @media (max-width: 300px) {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: $footer-breakpoint) {
+      text-align: center;
+    }
+  }
+
+  .rightSide {
+    @include flex-positioning(flex, row, center, center);
+
+    a,
+    p {
+      color: white !important;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+
+    .social-icons {
+      margin-left: 15px;
+      margin-right: 15px;
+
+      img {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 12%;
+      }
+    }
+
+    @media (max-width: $footer-breakpoint) {
+      visibility: hidden;
+    }
+  }
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+/* FORM */
+.form-container {
+  @include flex-positioning(flex, column, center, flex-start);
+
+  @media (max-width: $second-breakpoint) {
+    @include flex-positioning(flex, column, center, center);
+  }
+
+  h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  form {
+    @include flex-positioning(flex, column, center, flex-start);
+
+    .label-input {
+      margin-bottom: 10px;
+      input,
+      textarea {
+        padding: 10px;
+        width: 200px;
+        border: 1px $secondary-color solid;
+
+        @media (max-width: $third-breakpoint) {
+          width: 80vw;
+        }
+      }
+
+      p {
+        color: $primary-color;
+      }
+    }
+
+    @media (max-width: $second-breakpoint) {
+      @include flex-positioning(flex, column, center, center);
+    }
+
+    input.submit {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* CARD SECTION */
+.card-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    font-weight: bold;
+  }
+  .card-container {
+    @include flex-positioning(flex, row, center, center);
+    margin-top: 20px;
+
+    @media (max-width: $second-breakpoint) {
+      @include flex-positioning(flex, column, center, center);
+    }
+  }
+
+  #card {
+    background-color: #f2f2f2;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    @include flex-positioning(flex, column, center, center);
+
+    @media (max-width: $second-breakpoint) {
+      margin-bottom: 25px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media (max-width: $third-breakpoint) {
+      width: 80vw;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: ease-in-out 0.2s;
+    }
+
+    h3 {
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    p {
+      width: 60%;
+    }
+  }
+}
+
+.message-success {
+  color: $primary-color;
+}

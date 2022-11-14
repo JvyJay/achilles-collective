@@ -1,0 +1,39 @@
+// MIXINS
+@mixin general-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1.5;
+}
+
+@mixin image-intermission {
+  position: relative;
+  width: 100%;
+}
+
+@mixin text-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@mixin button-style($bg-color, $border, $font-color) {
+  width: 150px;
+  height: 40px;
+  background-color: $bg-color;
+  border: 1px solid;
+  border-color: $border;
+  color: $font-color;
+  text-align: center;
+}
+
+@mixin flex-positioning($display, $direction, $justify-content, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align;
+}
