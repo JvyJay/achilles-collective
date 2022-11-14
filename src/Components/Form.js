@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../sass/app.scss';
 
 const FORM_END =
   'https://public.herotofu.com/v1/2ef75930-63c6-11ed-891b-4f350712a1f0';
