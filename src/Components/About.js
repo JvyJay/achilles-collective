@@ -22,7 +22,7 @@ const data = [
     id: 3,
     title: 'Sparring',
     desc:
-      'Light sparring for beginners & intermediate to hard sparring for more experienced martial artists/fighters.',
+      'Open Sparring for all experience levels. Possible Competitions in the future.',
   },
 ];
 

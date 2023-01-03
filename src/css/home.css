@@ -1,0 +1,202 @@
+/* VARIABLES */
+/* HOME PAGE */
+.hero-area-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hero-area-container .left {
+  width: 40%;
+}
+.hero-area-container .left h1 {
+  margin-bottom: 20px;
+}
+.hero-area-container .left h1 span {
+  color: #da4444;
+}
+.hero-area-container .left p {
+  margin-bottom: 20px;
+}
+.hero-area-container .left .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero-area-container .left .button-container button {
+  margin-right: 10px;
+}
+.hero-area-container .left .button-container button:hover {
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  .hero-area-container .left .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .hero-area-container .left {
+    width: 80%;
+  }
+}
+@media (max-width: 760px) {
+  .hero-area-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-area-container img {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 760px) and (max-width: 300px) {
+  .hero-area-container img {
+    width: 80%;
+  }
+}
+
+.image-intermission {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.image-intermission img {
+  display: block;
+  width: 100vw;
+}
+@media (max-width: 550px) {
+  .image-intermission img {
+    height: 200px;
+  }
+}
+@media (max-width: 430px) {
+  .image-intermission img {
+    height: 220px;
+  }
+}
+@media (max-width: 340px) {
+  .image-intermission img {
+    height: 240px;
+  }
+}
+@media (max-width: 330px) {
+  .image-intermission img {
+    height: 300px;
+  }
+}
+@media (max-width: 210px) {
+  .image-intermission img {
+    height: 350px;
+  }
+}
+.image-intermission .text-block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .image-intermission .text-block {
+    width: 80%;
+  }
+}
+@media (max-width: 830px) {
+  .image-intermission .text-block {
+    width: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .image-intermission .text-block {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .image-intermission .text-block {
+    width: 100%;
+  }
+}
+@media (max-width: 240px) {
+  .image-intermission .text-block p {
+    line-height: 1;
+  }
+}
+
+.contact-form-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.contact-form-section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-form-section .left .quart {
+  margin-bottom: 20px;
+}
+.contact-form-section .left .quart h3 {
+  font-weight: bold;
+}
+.contact-form-section .left .quart img {
+  width: 14px;
+}
+.contact-form-section .left .quart p {
+  margin-bottom: 10px;
+}
+.contact-form-section .left .quart button:hover {
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  .contact-form-section .left .quart {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .contact-form-section .left .quart {
+    margin-right: 0;
+  }
+}
+@media (max-width: 760px) {
+  .contact-form-section .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  .contact-form-section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 760px) {
+  .contact-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
