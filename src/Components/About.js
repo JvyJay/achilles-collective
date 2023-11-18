@@ -33,19 +33,8 @@ const About = () => {
       <main>
         {/* IMAGE INTERMISSION */}
         <Fade>
-          <div className='image-intermission'
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            textAlign: 'center',
-          }}>
-            <img alt='Old School Pugilism' src={pugilism_photo}
-            style={{
-              width: '100%',
-              maxWidth: '100%',
-              height: 'auto',
-            }}></img>
+          <div className='image-intermission'>
+            <img alt='Old School Pugilism' src={pugilism_photo}></img>
             <div className='text-block'>
               <h1>Our Mission..</h1>
               <p>
