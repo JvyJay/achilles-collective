@@ -17,7 +17,10 @@ function Navy() {
   return (
     <>
       <Router>
-        <Navbar className='p-5' expand='lg'>
+        <Navbar
+          className='p-5 flex flex-row justify-content-center align-items-center align-self-center text-center'
+          expand='lg'
+        >
           <Container>
             <Navbar.Brand>
               <img
@@ -28,8 +31,8 @@ function Navy() {
               />{' '}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
-            <Navbar.Collapse id='basic-navbar-nav ml-auto flex-shrink-1'>
-              <Nav className='me-auto'>
+            <Navbar.Collapse id='basic-navbar-nav'>
+              <Nav>
                 <Nav.Link>
                   <Link
                     class='text-dark'
@@ -74,7 +77,7 @@ function Navy() {
         </Routes>
 
         {/* FOOTER SECTION */}
-        <footer className='text-center d-flex justify-content-center p-4'>
+        <footer className='text-center d-flex justify-content-center p-5'>
           <p className='text-white'>Achilles Collective &#169; 2022</p>
           {/* <div className='rightSide'>
             <ul>

@@ -5,6 +5,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 // IMAGES
 import pugilism_photo from '../img/pugilism2.png';
 
+
 const data = [
   {
     id: 1,
@@ -32,20 +33,23 @@ const About = () => {
       <main>
         {/* IMAGE INTERMISSION */}
         <Fade>
-          <div className='image-intermission'>
-            <img alt='Old School Pugilism' src={pugilism_photo}></img>
+          <div className='image-intermission'
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            textAlign: 'center',
+          }}>
+            <img alt='Old School Pugilism' src={pugilism_photo}
+            style={{
+              width: '100%',
+              maxWidth: '100%',
+              height: 'auto',
+            }}></img>
             <div className='text-block'>
               <h1>Our Mission..</h1>
               <p>
-                The goal of this platform is to bring together like-minded
-                martial artists whether you`re a boxer, Muay Thai fighter or
-                just somebody interested in combat sports. We plan to build a
-                community focused on knowledge exchange and training things such
-                as pad-work, partner drills and potentially sparring if you feel
-                ready. Whether you`re a full-time fighter or a somebody that`s
-                curious about what it takes to be a martial artist - anybody is
-                welcome as long as you`re willing to work and train hard with
-                everybody!
+              This platform unites martial artists across disciplines, fostering a community focused on knowledge exchange and training, including pad-work and partner drills. All are welcome, from dedicated fighters to those curious about martial arts, as long as they're willing to work and train with the community.
               </p>
             </div>
           </div>
